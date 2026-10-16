@@ -104,6 +104,16 @@ section{padding-block:96px}
 #g-nac,#g-int{grid-template-columns:repeat(3,1fr)}
 @media (max-width:980px){#g-nac,#g-int{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){#g-nac,#g-int{grid-template-columns:1fr}}
+.sol-banner{margin-top:30px;display:grid;grid-template-columns:1.1fr 1fr;border-radius:24px;overflow:hidden;background:var(--navy);color:#fff;text-decoration:none}
+.sol-banner .fotos{display:grid;grid-template-columns:repeat(3,1fr);min-height:220px}
+.sol-banner .fotos span{background:#13235C center/cover}
+.sol-banner .tx{padding:28px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.sol-banner small{font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+.sol-banner b{font-family:var(--display);font-weight:400;font-size:clamp(36px,4.5vw,54px);text-transform:uppercase;line-height:1}
+.sol-banner p{color:#C9D0E8;font-size:15px}
+.sol-banner .btn{align-self:flex-start;margin-top:6px}
+.sol-banner:hover .btn{transform:translateY(-2px)}
+@media (max-width:760px){.sol-banner{grid-template-columns:1fr}.sol-banner .fotos{min-height:150px}}
 .otro{margin-top:26px;font-size:16px;color:var(--mute)}
 .otro a{color:var(--turq);font-weight:700}
 .hoteles h3{font-family:var(--display);font-weight:400;font-size:34px;text-transform:uppercase}
@@ -202,7 +212,7 @@ footer .verbos span{color:var(--gold)}
   <div class="wrap">
     <a class="marca" href="#inicio" aria-label="ProfeTours, inicio"><img src="img/logo-blanco.png" alt="ProfeTours Agencia de Viajes"></a>
     <nav aria-label="Secciones">
-      <a href="#destinos">Destinos</a><a href="#como">Cómo reservar</a><a href="#mas">Grupos</a><a href="#nosotros">Nosotros</a><a href="#preguntas">Preguntas</a>
+      <a href="#destinos">Destinos</a><a href="dias-de-sol/">Días de sol</a><a href="#como">Cómo reservar</a><a href="#mas">Grupos</a><a href="#nosotros">Nosotros</a><a href="#preguntas">Preguntas</a>
     </nav>
     <a class="btn gold" href="https://wa.me/573218303572?text=Hola%20ProfeTours%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20quiero%20informaci%C3%B3n%20de%20los%20planes" target="_blank" rel="noopener">Reservar</a>
   </div>
@@ -249,6 +259,7 @@ footer .verbos span{color:var(--gold)}
     </div>
     <div role="tabpanel" id="p-nac" aria-labelledby="tab-nac" hidden><p class="nota-tab">Tiquetes, hotel y traslados en un solo plan, con el acompañamiento de siempre.</p><div class="dgrid" id="g-nac"></div></div>
     <div role="tabpanel" id="p-int" aria-labelledby="tab-int" hidden><p class="nota-tab">El Caribe y más allá. Te cotizamos vuelos, hotel todo incluido y traslados.</p><div class="dgrid" id="g-int"></div></div>
+    <a class="sol-banner" href="dias-de-sol/"><div class="fotos" aria-hidden="true"><span style="background-image:url(img/dias-de-sol/guatape.jpg)"></span><span style="background-image:url(img/dias-de-sol/kanaloa.jpg)"></span><span style="background-image:url(img/dias-de-sol/jardin.jpg)"></span></div><div class="tx"><small>Planes de un día desde Medellín</small><b>Días de sol</b><p>Guatapé, Jardín, Santa Fe, Nápoles, Río Claro, Kanaloa y más. Transporte, comidas y seguro incluidos, desde $125.000 por persona.</p><span class="btn gold">Ver los planes</span></div></a>
     <p class="otro">¿No ves el destino que sueñas? <a href="https://wa.me/573218303572?text=Hola%20ProfeTours%2C%20quiero%20cotizar%20un%20viaje%20en%20avi%C3%B3n" target="_blank" rel="noopener">Escríbenos y te lo cotizamos</a>.</p>
   </div>
 </section>

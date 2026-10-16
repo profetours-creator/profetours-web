@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Días de sol desde Medellín · ProfeTours</title>
+<meta name="description" content="Días de sol y tours de un día desde Medellín: Guatapé, Jardín, Santa Fe de Antioquia, Hacienda Nápoles, Río Claro, Kanaloa y más. Transporte, comidas y seguro incluidos. Desde $125.000. RNT 65131.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Días de sol desde Medellín · ProfeTours">
+<meta property="og:description" content="20 planes de un día con transporte, comidas y seguro. Desde $125.000 por persona. Reserva por WhatsApp.">
+<meta property="og:image" content="https://profetours.com/img/dias-de-sol/og.jpg">
+<meta property="og:url" content="https://profetours.com/dias-de-sol/">
+<link rel="icon" href="../img/isotipo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&family=Caveat+Brush&display=swap" rel="stylesheet">
+<style>
+/* Concepto: misma marca que la página principal; los planes como tarjetas con sello de precio amarillo */
+:root{
+  --navy:#0A1640; --navy2:#13235C; --gold:#FBC41C; --turq:#0FA3B8; --verde:#14A277; --wa:#25B25A;
+  --bg:#F4F6FA; --surface:#FFFFFF; --ink:#0A1640; --mute:#5A6380; --line:#DDE2EE; --chip:#EAEEF7;
+  --display:'Anton',Impact,'Arial Narrow',sans-serif; --body:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif; --hand:'Caveat Brush','Comic Sans MS',cursive;
+  --wrap:1180px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070E2B;--surface:#0F1A45;--ink:#EEF1FA;--mute:#A7AFCE;--line:#26326A;--chip:#18255A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#070E2B;--surface:#0F1A45;--ink:#EEF1FA;--mute:#A7AFCE;--line:#26326A;--chip:#18255A;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.05;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:40px;padding:12px 20px;font:700 14.5px var(--body);text-decoration:none;cursor:pointer;transition:transform .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.gold{background:var(--gold);color:#0A1640}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.top{position:sticky;top:0;z-index:50;background:rgba(10,22,64,.97);padding-top:env(safe-area-inset-top,0px);box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.top .marca img{height:40px;width:auto}
+.top nav{display:flex;gap:24px;font-size:14.5px;font-weight:600}
+.top nav a{text-decoration:none;color:#fff;opacity:.9}
+.top nav a:hover,.top nav a[aria-current]{opacity:1;color:var(--gold)}
+@media (max-width:760px){.top nav{display:none}}
+
+.hero{position:relative;color:#fff;background:#0A1640 url(../img/dias-de-sol/hero.jpg) center/cover no-repeat;padding-block:84px 56px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,64,.35) 0%,rgba(10,22,64,.55) 55%,rgba(10,22,64,.96) 100%)}
+.hero .wrap{position:relative}
+.hero .k{font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(64px,12vw,150px);line-height:.9;text-transform:uppercase;margin-top:10px}
+.hero .hand{display:block;font-family:var(--hand);font-size:clamp(28px,4vw,46px);color:var(--gold);transform:rotate(-2.5deg);transform-origin:left;margin-top:6px}
+.hero p{margin-top:16px;max-width:56ch;font-size:17px;color:#DCE1F2}
+.datos{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.datos span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);border-radius:14px;padding:9px 14px;font-size:14px}
+.datos b{color:var(--gold)}
+
+.bar{position:sticky;top:calc(68px + env(safe-area-inset-top,0px));z-index:40;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;gap:8px;align-items:center;padding-block:12px;overflow-x:auto;scrollbar-width:none}
+.bar .wrap::-webkit-scrollbar{display:none}
+.chip{flex:none;font:600 14px var(--body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:30px;padding:8px 16px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.bar select{flex:none;margin-left:auto;font:600 14px var(--body);background:var(--surface);color:var(--ink);border:1.5px solid var(--line);border-radius:30px;padding:8px 14px}
+
+main{padding-block:34px 70px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(330px,100%),1fr));gap:22px}
+@media (max-width:420px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-width:0;box-shadow:0 8px 26px rgba(10,22,64,.08)}
+.card:target{outline:4px solid var(--gold);outline-offset:-4px}
+.ph{position:relative;aspect-ratio:16/11;max-width:100%;background:var(--navy2)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph:after{content:"";position:absolute;inset:auto 0 0 0;height:60%;background:linear-gradient(to top,rgba(10,22,64,.9),rgba(10,22,64,0))}
+.ph .ttl{position:absolute;left:18px;right:128px;bottom:14px;z-index:1;color:#fff}
+.ph .pl{font-family:var(--hand);font-size:21px;color:var(--gold);line-height:1}
+.ph h2{font-family:var(--display);font-weight:400;font-size:31px;line-height:1;text-transform:uppercase;margin-top:3px}
+.sello{position:absolute;right:14px;bottom:14px;z-index:1;background:var(--gold);color:#0A1640;border-radius:14px;padding:7px 12px 6px;text-align:center;transform:rotate(-3deg);box-shadow:0 4px 0 #D9A400}
+.sello small{display:block;font-size:10.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;line-height:1.1}
+.sello b{display:block;font-family:var(--display);font-weight:400;font-size:27px;line-height:1.05}
+.tags{position:absolute;left:14px;top:14px;z-index:1;display:flex;gap:6px;flex-wrap:wrap}
+.tag{background:var(--navy);color:#fff;font-size:11.5px;font-weight:700;border-radius:8px;padding:4px 9px}
+.tag.hot{background:var(--gold);color:#0A1640}
+.bd{padding:18px;display:flex;flex-direction:column;gap:14px;flex:1}
+.when{display:flex;gap:10px;align-items:flex-start;background:var(--chip);border-radius:12px;padding:10px 12px;font-size:14px;font-weight:600}
+.when svg{flex:none;width:18px;height:18px;margin-top:2px;color:var(--turq)}
+.tiers{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tier{border:1.5px solid var(--line);border-radius:12px;padding:8px 12px}
+.tier b{font-family:var(--display);font-weight:400;font-size:24px;display:block;line-height:1.15}
+.tier span{font-size:12.5px;color:var(--mute);font-weight:600}
+.lbl{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--turq);margin-bottom:6px}
+ul.inc{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:14px}
+ul.inc li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px}
+ul.inc li:before{content:"✓";color:var(--verde);font-weight:800}
+details{font-size:14px}
+details summary{cursor:pointer;font-weight:700;color:var(--turq);list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary:before{content:"+ "}
+details[open] summary:before{content:"– "}
+details .dd{padding-top:8px;display:grid;gap:10px;color:var(--mute)}
+details .dd b{color:var(--ink)}
+.dep{margin:4px 0 0;padding-left:18px}
+.kids{font-size:13px;color:var(--mute)}
+.acc{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.acc .wa{flex:1}
+
+.cond{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:46px}
+.cond div{background:var(--surface);border-radius:20px;padding:22px}
+.cond h3{font-size:17px;margin-bottom:6px}
+.cond p,.cond ul{font-size:14.5px;color:var(--mute);margin:0}
+.cond ul{padding-left:18px}
+.cta{margin-top:24px;background:var(--navy);color:#fff;border-radius:24px;padding:30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+.cta h3{font-family:var(--display);font-weight:400;font-size:clamp(30px,4vw,44px);text-transform:uppercase}
+.cta p{color:#C9D0E8}
+footer{background:#060D2A;color:#A7AFCE;font-size:13.5px;padding-block:28px calc(28px + env(safe-area-inset-bottom,0px));text-align:center}
+footer a{color:#fff}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--navy);color:#fff;border-radius:30px;padding:10px 18px;font-weight:600;font-size:14px;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="marca" href="../" aria-label="ProfeTours, inicio"><img src="../img/logo-blanco.png" alt="ProfeTours Agencia de Viajes"></a>
+    <nav aria-label="Secciones"><a href="../#destinos">Destinos</a><a href="./" aria-current="page">Días de sol</a><a href="../#como">Cómo reservar</a><a href="../#nosotros">Nosotros</a></nav>
+    <a class="btn gold" href="https://wa.me/573218303572?text=Hola%20ProfeTours%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20d%C3%ADas%20de%20sol%20y%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener">Reservar</a>
+  </div>
+</header>
+
+<section class="hero" aria-label="Portada">
+  <div class="wrap">
+    <span class="k">Planes de un día · desde Medellín</span>
+    <h1>Días de sol</h1>
+    <span class="hand">sales temprano, vuelves feliz</span>
+    <p>Pueblos, piscinas, ríos y parques a pocas horas de Medellín. Incluyen transporte ida y regreso, comidas y tarjeta de asistencia médica. Escoge tu plan y resérvalo por WhatsApp.</p>
+    <div class="datos"><span><b>20</b> planes</span><span>desde <b>$125.000</b> por persona</span><span>salidas <b>sábados, domingos y festivos</b></span></div>
+  </div>
+</section>
+
+<div class="bar" role="toolbar" aria-label="Filtrar planes"><div class="wrap" id="chips"></div></div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+
+  <div class="cond">
+    <div><h3>Cómo separas tu cupo</h3><p>Con el 50 % del valor apartas tu puesto. El saldo se paga 2 días antes de la salida.</p></div>
+    <div><h3>Niños</h3><p>En la mayoría de planes los niños de 0 a 3 años pagan solo la tarjeta de asistencia médica y van cargados. Desde los 4 años pagan tarifa completa. Cada plan tiene su detalle.</p></div>
+    <div><h3>Ten en cuenta</h3><p>Tarifas por persona, sujetas a cambio sin previo aviso y a disponibilidad de cupos. Aplican términos y condiciones.</p></div>
+  </div>
+  <div class="cta">
+    <div><h3>¿No sabes cuál escoger?</h3><p>Cuéntanos con quién vas y qué te gusta, y te recomendamos el plan.</p></div>
+    <a class="btn wa" href="https://wa.me/573218303572?text=Hola%20ProfeTours%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20d%C3%ADas%20de%20sol%20y%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.69-6.16A11.9 11.9 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.9 11.9 0 0 1 11.9 11.9c0 6.57-5.34 11.9-11.9 11.9-2 0-3.97-.5-5.71-1.46L.06 24zm6.6-3.8c1.68 1 3.28 1.59 5.39 1.59 5.45 0 9.89-4.43 9.9-9.88 0-5.46-4.42-9.89-9.89-9.89-5.45 0-9.88 4.43-9.88 9.88 0 2.23.65 3.9 1.75 5.65l-1 3.65 3.73-.99zm11.37-5.47c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.62-.92-2.22-.25-.58-.5-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41z"/></svg>Escríbenos por WhatsApp</a>
+  </div>
+</main>
+
+<footer><div class="wrap">ProfeTours Agencia de Viajes · Medellín · RNT 65131 · WhatsApp 321 830 3572 · <a href="../">profetours.com</a></div></footer>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script>
+const P=[{"id": "encanto", "n": "Hostería El Encanto", "pl": "Cocorná", "p": 135000, "cats": ["piscina"], "hot": "Concierto en vivo", "fecha": true, "sal": "Domingo 18 de octubre", "inc": ["Transporte ida y regreso", "Desayuno y almuerzo", "Acceso a las atracciones", "Ingreso a zonas húmedas", "Concierto de música popular en vivo", "Seguro de viaje y guía turístico"], "dep": ["Te confirmamos el punto y la hora al reservar"], "kids": "Pregúntanos la tarifa de niños."}, {"id": "jardin", "n": "Jardín", "pl": "Antioquia", "p": 125000, "cats": ["pueblos"], "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte ida y regreso en bus o buseta de turismo", "Desayuno y almuerzo tipo menú", "Caminata opcional a la Cascada del Amor y Charco Corazón", "Parques de Hispania, Andes y Jardín", "Visita a la Casa del Dulce", "Visita a la cafetería Las Macanas", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Terminal del Norte – 4:30 a. m.", "Av. Oriental, CC Camino Real – 4:40 a. m.", "Estación Industriales (Autopista Sur) – 5:10 a. m."], "kids": "0 a 3 años: $25.000."}, {"id": "margaritas", "n": "Hotel Las Margaritas", "pl": "San Jerónimo", "p": 125000, "cats": ["piscina"], "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte ida y vuelta en bus o buseta de turismo", "Desayuno, almuerzo y refrigerio", "Ingreso al Hotel Las Margaritas", "Piscina de adultos y de niños", "Servicio wifi", "Seguro hotelero"], "dep": ["Estación Universidad del metro – 6:45 a. m."], "kids": "0 a 3 años no pagan."}, {"id": "gaitero", "n": "Ecoparque El Gaitero", "pl": "Día de sol", "p": 125000, "cats": ["piscina", "aventura"], "sal": "Pregúntanos por las próximas fechas", "inc": ["Transporte en bus de turismo", "Desayuno y almuerzo tipo buffet", "Ingreso al ecoparque", "Lagos para la pesca y río natural", "Granja interactiva y zonas verdes", "Piscinas de adultos y de niños", "Recreación dirigida: caminata ecológica, autoexfoliación con café y bingo", "Seguro hotelero"], "dep": ["CAI de Policía del Parque San Antonio – 6:30 a. m."], "kids": "0 a 3 años: $8.000 de seguro hotelero."}, {"id": "guatape", "n": "Guatapé", "pl": "Antioquia · El Peñol", "p": 129000, "desde": true, "cats": ["pueblos"], "sal": "Salidas todos los días · regreso 4:30 p. m. aprox.", "inc": ["Transporte en bus o buseta de turismo", "Desayuno y almuerzo tipo menú", "Paseo en barco por el embalse", "Parque temático San José con granja", "Réplica del Antiguo Peñol", "Piedra del Peñol (no incluye el ascenso)", "Pueblo de Guatapé", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Parque del Poblado – 7:00 a. m.", "Estadio – 7:00 a. m.", "Terminal del Norte – 7:30 a. m.", "San Diego – 7:35 a. m.", "Zamora – 7:35 a. m.", "(Horarios sujetos a cambios)"], "kids": "0 a 3 años: $25.000."}, {"id": "kanaloa", "n": "Parque Acuático Kanaloa", "pl": "Día de sol", "p": 129000, "cats": ["piscina", "parques"], "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte ida y regreso en bus o buseta", "Desayuno en carretera", "Granja interactiva Makondo", "Zonas húmedas: Aquaconda, Rokaudal, Ardiluvio, Tobotuga, Lagoana, Burbuga, Kanaloa, Monarka y Diverlluvia", "Coordinador y tarjeta de asistencia médica"], "dep": ["Parque del Poblado – 6:00 a. m.", "Estación Industriales, CC Punto Clave – 6:20 a. m.", "Av. Oriental, Cámara de Comercio – 6:40 a. m.", "Bomba de la 65 frente al Cementerio Universal – 7:00 a. m."], "kids": "0 a 2 años: $25.000. Desde 3 años tarifa normal."}, {"id": "acuarela", "n": "Acuarela del Río", "pl": "Día de sol", "p": 129000, "cats": ["piscina"], "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte ida y vuelta en bus o buseta de turismo", "Desayuno, almuerzo y refrigerio", "Ingreso a Acuarela del Río", "Piscina de adultos y niños, jacuzzi y baño turco", "Servicio wifi", "Seguro hotelero"], "dep": ["Estación Universidad del metro – 6:45 a. m."], "kids": "0 a 3 años no pagan."}, {"id": "bohios", "n": "Hotel Los Bohíos", "pl": "Santa Fe de Antioquia", "p": 129000, "cats": ["piscina"], "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte ida y vuelta en bus o buseta de turismo", "Desayuno, almuerzo y refrigerio", "Ingreso al Hotel Los Bohíos", "Piscina de adultos y de niños", "Parque infantil, cancha de fútbol, quiosco rumbero y hamacas", "Seguro hotelero"], "dep": ["Estación Universidad del metro – 6:45 a. m."], "kids": "0 a 3 años no pagan."}, {"id": "cisneros", "n": "Cisneros", "pl": "Ruta del ferrocarril", "p": 139000, "cats": ["pueblos", "piscina"], "sal": "Todos los domingos · en puentes: sábado, domingo y lunes festivo", "inc": ["Transporte en bus o buseta de turismo", "Desayuno y almuerzo", "Corregimiento de Santiago y municipio de Cisneros", "Museo Fundatunel y casa museo de Cisneros", "Locomotora 45 y museo del Ferrocarril de Antioquia", "Hostería con piscinas, río Nus, billar, pimpón y zonas verdes", "Coordinador y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 6:00 a. m.", "Av. Oriental, Cámara de Comercio – 6:20 a. m.", "Terminal del Norte – 6:40 a. m.", "Niquía – 7:00 a. m."], "kids": "0 a 3 años: $25.000."}, {"id": "betania", "n": "Betania", "pl": "El Machu Picchu antioqueño", "p": 139000, "cats": ["pueblos", "aventura"], "sal": "Todos los domingos · en puentes: sábados, domingos y festivos", "inc": ["Transporte en bus o buseta de turismo", "Desayuno y almuerzo tipo menú", "Mirador Machu Picchu Antioqueño", "Parque principal de Betania", "Visita y baño en charcos", "Hacienda Piedra Luna y la historia de la Patasola", "Casa Museo La Guitarra", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Terminal del Norte – 4:30 a. m.", "Av. Oriental, CC Camino Real – 4:50 a. m.", "Estación Industriales (Autopista Sur) – 5:20 a. m.", "Itagüí, Fábricas Unidas – 5:40 a. m."], "kids": "0 a 3 años: $25.000."}, {"id": "concepcion-n", "n": "Concepción y Alejandría", "pl": "con Balneario Nudillales", "p": 139000, "desde": true, "cats": ["pueblos", "piscina"], "sal": "Todos los domingos · en puentes: sábados, domingos y festivos · regreso 5:00 p. m.", "inc": ["Transporte en bus o buseta de turismo", "Desayuno y almuerzo", "Visita al municipio de Alejandría", "Ruta cultural por Concepción: parque José María Córdoba, iglesia La Inmaculada, calles coloniales, Alto de la Virgen y casa museo", "Balneario Nudillales: piscinas y jacuzzi de agua natural, zonas verdes y parque infantil", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 5:30 a. m.", "Av. Oriental, Cámara de Comercio – 5:50 a. m.", "Bomba Primax Los Ángeles (Zamora) – 6:20 a. m."], "kids": "0 a 3 años: $35.000 (incluye ingreso al balneario)."}, {"id": "napoles-promo", "n": "Hacienda Nápoles", "pl": "Promoción de locura", "p": 139000, "cats": ["parques", "piscina", "fechas"], "hot": "Promo", "fecha": true, "sal": "Jueves 19 de noviembre", "inc": ["Transporte ida y regreso en bus o buseta", "Desayuno en carretera", "Ingreso al parque temático", "Recorrido panorámico: parque jurásico, sabana africana, suricatos y felinos", "Biolandia: nutria, boa y anaconda", "Zona húmeda 45 min: Río Salvaje, Cataratas Victoria y Las Cobras", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 4:00 a. m.", "Av. Oriental, Cámara de Comercio – 4:20 a. m.", "Bomba Primax Los Ángeles (Zamora) – 4:40 a. m."], "kids": "0 a 11 meses: $85.000. 1 a 3 años: $105.000. No se pueden entrar comidas ni bebidas al parque."}, {"id": "leche", "n": "Tour de la Leche", "pl": "San Pedro de los Milagros", "p": 145000, "cats": ["pueblos"], "sal": "Sábados, domingos y festivos · regreso 5:30 p. m.", "inc": ["Transporte en bus o buseta de turismo", "Desayuno y almuerzo", "Ingreso a la granja de Don Fer", "Haces tu propio quesito antioqueño", "Charla pedagógica sobre los animales", "Basílica del Señor de los Milagros y parque principal", "Caballeriza con exhibición de caballo criollo", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Parque del Poblado – 6:00 a. m.", "Estación Industriales, CC Punto Clave – 6:20 a. m.", "Av. Oriental, Cámara de Comercio – 6:40 a. m.", "Bomba de la 65 frente al Cementerio Universal – 7:00 a. m."], "kids": "0 a 3 años: $25.000."}, {"id": "santafe", "n": "Santa Fe de Antioquia", "pl": "Hostería Villa Guadalupe", "p": 145000, "cats": ["pueblos", "piscina"], "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte en bus o buseta de turismo", "Cóctel de bienvenida, desayuno y almuerzo tipo menú", "Hostería Villa Guadalupe con piscina", "Puente de Occidente en motocarro", "Plaza principal, calles coloniales y Museo Juan del Corral", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Parque del Poblado – 6:00 a. m.", "Estación Industriales, CC Punto Clave – 6:20 a. m.", "Av. Oriental, Cámara de Comercio – 6:40 a. m.", "Bomba de la 65 frente al Cementerio Universal – 7:00 a. m."], "kids": "0 a 2 años: $25.000. Desde 3 años tarifa normal."}, {"id": "concepcion-s", "n": "Concepción", "pl": "con Parque Acuático Selvatika", "p": 145000, "desde": true, "cats": ["pueblos", "piscina"], "sal": "Todos los domingos · en puentes: sábados, domingos y festivos", "inc": ["Transporte en bus o buseta de turismo", "Desayuno y almuerzo", "Parque Acuático Selvatika: piscina de agua natural, tobogán y zonas verdes", "Ruta cultural por Concepción: parque José María Córdoba, iglesia La Inmaculada, Alto de la Virgen y casa museo", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 5:30 a. m.", "Av. Oriental, Cámara de Comercio – 5:50 a. m.", "Bomba Primax Los Ángeles (Zamora) – 6:20 a. m."], "kids": "0 a 3 años: $35.000 (incluye ingreso al parque)."}, {"id": "santorini", "n": "Santorini Colombiano", "pl": "Aldea Plaza", "p": 149000, "cats": ["pueblos", "piscina"], "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte en bus o buseta de turismo", "Desayuno en carretera y almuerzo", "Visita a la Aldea Plaza, el Santorini Colombiano (2 horas)", "Finca hotel con piscina y espacios comunes", "Coordinador y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 4:30 a. m.", "Av. Oriental, Cámara de Comercio – 4:50 a. m.", "Bomba Primax Los Ángeles (Zamora) – 5:20 a. m."], "kids": "0 a 3 años: $25.000."}, {"id": "melcocho", "n": "Río Melcocho", "pl": "Naturaleza y aventura", "p": 155000, "cats": ["aventura", "fechas"], "fecha": true, "sal": "Oct 18 · Nov 1 y 15 · Dic 13 y 20", "inc": ["Transporte ida y regreso en bus o buseta", "Desayuno en carretera y almuerzo", "Chiva hasta El Retiro", "Charco Puente Azul", "Reserva natural Río Melcocho: 3,5 km a pie (nivel 2.5)", "Caminata por camino de herradura, 1 h 30 aprox. por trayecto", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 4:30 a. m.", "Av. Oriental, Cámara de Comercio – 4:40 a. m.", "Bomba Primax Los Ángeles (Zamora) – 5:10 a. m."], "kids": "No recomendado para menores de 4 años ni movilidad reducida. Caballo opcional $35.000 por trayecto."}, {"id": "cacao", "n": "Tour del Cacao", "pl": "Amalfi", "p": 189000, "cats": ["pueblos", "aventura", "fechas"], "fecha": true, "sal": "Oct 18 · Nov 1, 8, 15 y 22 · Dic 6, 13, 20 y 27 · privados todos los días (consultar)", "inc": ["Transporte en bus o buseta de turismo", "Desayuno y almuerzo campesino", "Parada fotográfica en Puente Porce II", "Finca cacaotera Chocochucho", "Recorrido por senderos de cacao con cata de la fruta", "Piscina de agua natural", "Haces tu propio chocolate artesanal", "Pueblo de Amalfi y parque principal", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 4:30 a. m.", "Av. Oriental, Cámara de Comercio – 4:50 a. m.", "Terminal del Norte – 5:15 a. m.", "Niquía, Bahía del D1 – 5:30 a. m."], "kids": "0 a 3 años: $25.000."}, {"id": "rioclaro", "n": "Río Claro", "pl": "con Santorini Colombiano", "p": 199000, "cats": ["aventura"], "hot": "Rafting", "sal": "Todos los sábados, domingos y festivos", "inc": ["Transporte en bus o buseta de turismo", "Desayuno en carretera y almuerzo", "Rafting por Río Claro con guía profesional", "Recorrido por La Aldea, el Santorini Colombiano", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Estación Industriales, CC Punto Clave – 4:30 a. m.", "Av. Oriental, Cámara de Comercio – 4:50 a. m.", "Bomba Primax Los Ángeles (Zamora) – 5:20 a. m."], "kids": "Desde 3 años hacen la actividad y pagan tarifa normal. Nivel 1, no apto para movilidad reducida."}, {"id": "napoles", "n": "Hacienda Nápoles", "pl": "Pasaportes", "p": 259000, "cats": ["parques", "piscina"], "sal": "Miércoles a domingo y festivos", "tiers": [["$259.000", "Pasaporte Básico"], ["$299.000", "Pasaporte Safari"]], "inc": ["Transporte ida y regreso en bus o buseta", "Desayuno en carretera", "Básico: aventura jurásica, mariposario, hipopótamos, Amazon Safari, sabana africana, museos, aves, reptiles y tortugario (sin zonas húmedas)", "Safari: todo lo del Básico + Cataratas, Cobras, Río Salvaje y zona acuática Octopus", "Guía acompañante y tarjeta de asistencia médica"], "dep": ["Parque del Poblado – 4:30 a. m.", "Estadio – 4:40 a. m.", "Terminal del Norte (Autopista sentido sur-norte) – 5:00 a. m.", "Bomba Primax Los Ángeles – 5:10 a. m."], "kids": "0 a 11 meses: $35.000. 1 a 3 años: Básico $249.000 / Safari $289.000. No incluye almuerzo."}];
+const CAT={todos:"Todos",piscina:"Con piscina",pueblos:"Pueblos",aventura:"Aventura y naturaleza",parques:"Parques temáticos",fechas:"Fechas especiales"};
+const WA="573218303572", ICO_WA=`<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.69-6.16A11.9 11.9 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.9 11.9 0 0 1 11.9 11.9c0 6.57-5.34 11.9-11.9 11.9-2 0-3.97-.5-5.71-1.46L.06 24zm6.6-3.8c1.68 1 3.28 1.59 5.39 1.59 5.45 0 9.89-4.43 9.9-9.88 0-5.46-4.42-9.89-9.89-9.89-5.45 0-9.88 4.43-9.88 9.88 0 2.23.65 3.9 1.75 5.65l-1 3.65 3.73-.99zm11.37-5.47c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.62-.92-2.22-.25-.58-.5-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41z"/></svg>`;
+const fmt=n=>"$"+n.toLocaleString("es-CO").replace(/,/g,".");
+const cal='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>';
+const g=document.getElementById("grid"), chips=document.getElementById("chips");
+let filtro="todos";
+function card(x){
+  const tags=(x.hot?`<span class="tag hot">${x.hot}</span>`:"")+(x.fecha?`<span class="tag">Fecha especial</span>`:"");
+  const s=x.tiers||x.desde?"desde":"por persona";
+  const msg=`Hola ProfeTours, vi en la página el plan *${x.n} (${x.pl})* de ${x.tiers?"desde ":""}${fmt(x.p)} y quiero reservar. ¿Me ayudas con la fecha?`;
+  const rest=x.inc.slice(5);
+  return `<article class="card" id="${x.id}">
+  <div class="ph"><img src="../img/dias-de-sol/${x.id}.jpg" alt="${x.n}, ${x.pl}" loading="lazy"><div class="tags">${tags}</div>
+   <div class="ttl"><div class="pl">${x.pl}</div><h2>${x.n}</h2></div><div class="sello"><small>${s}</small><b>${fmt(x.p)}</b></div></div>
+  <div class="bd">
+   <div class="when">${cal}<span>${x.sal}</span></div>
+   ${x.tiers?`<div class="tiers">${x.tiers.map(t=>`<div class="tier"><b>${t[0]}</b><span>${t[1]}</span></div>`).join("")}</div>`:""}
+   <div><p class="lbl">Incluye</p><ul class="inc">${x.inc.slice(0,5).map(i=>`<li>${i}</li>`).join("")}</ul></div>
+   <details><summary>${rest.length?`Ver todo lo que incluye y la salida`:"Ver puntos y horas de salida"}</summary><div class="dd">
+    ${rest.length?`<ul class="inc">${rest.map(i=>`<li>${i}</li>`).join("")}</ul>`:""}
+    <div><b>Salida desde Medellín</b><ul class="dep">${x.dep.map(d=>`<li>${d}</li>`).join("")}</ul></div>
+    <p class="kids"><b>Niños:</b> ${x.kids}</p></div></details>
+   <div class="acc"><a class="btn wa" href="https://wa.me/${WA}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">${ICO_WA}Reservar</a>
+    <button class="btn line" type="button" data-share="${x.id}">Compartir</button></div>
+  </div></article>`;
+}
+function render(){
+  const l=P.filter(x=>filtro==="todos"||x.cats.includes(filtro)).sort((a,b)=>a.p-b.p||a.n.localeCompare(b.n));
+  g.innerHTML=l.map(card).join("");
+}
+chips.innerHTML=Object.entries(CAT).filter(([k])=>k==="todos"||P.some(x=>x.cats.includes(k))).map(([k,v])=>`<button class="chip" type="button" data-k="${k}" aria-pressed="${k==="todos"}">${v}</button>`).join("");
+chips.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;filtro=b.dataset.k;chips.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));render();});
+function aviso(t){const el=document.getElementById("toast");el.textContent=t;el.hidden=false;clearTimeout(aviso.t);aviso.t=setTimeout(()=>el.hidden=true,2400);}
+g.addEventListener("click",async e=>{const b=e.target.closest("[data-share]");if(!b)return;const x=P.find(p=>p.id===b.dataset.share);
+  const url=location.origin+location.pathname+"#"+x.id;
+  if(navigator.share){try{await navigator.share({title:x.n+" · ProfeTours",text:`${x.n} (${x.pl}) desde ${fmt(x.p)}`,url});return}catch(_){return}}
+  try{await navigator.clipboard.writeText(url);aviso("Enlace copiado")}catch(_){prompt("Copia este enlace:",url)}});
+render();
+if(location.hash){const el=document.getElementById(location.hash.slice(1));if(el){const d=el.querySelector("details");if(d)d.open=true;setTimeout(()=>el.scrollIntoView({block:"start"}),50);}}
+</script>
+</body>
+</html>
